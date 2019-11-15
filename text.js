@@ -34,7 +34,7 @@ function formatDate(){
   var h = now.getHours();
   var mm = now.getMinutes();
   var s = now.getSeconds();
-  return y + '-' + m + '-' + d + ' ' + h + ':' + mm + ':' + s; 
+  return y + '-' + patchZero(m) + '-' + patchZero(d) + ' ' + patchZero(h) + ':' + patchZero(mm) + ':' + patchZero(s);
 }
 
 function patchZero(v){
