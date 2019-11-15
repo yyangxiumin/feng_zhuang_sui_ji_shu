@@ -24,3 +24,19 @@ function randomHexColor1() {
 }
 console.log(randomHexColor1());
 var box = document.getElementById('box');
+
+//日期的封装
+function formatDate(){
+  var now = new Date();
+  var y = now.getFullYear();
+  var m = now.getMonth() + 1;
+  var d = now.getDate();
+  var h = now.getHours();
+  var mm = now.getMinutes();
+  var s = now.getSeconds();
+  return y + '-' + m + '-' + d + ' ' + h + ':' + mm + ':' + s; 
+}
+
+function patchZero(v){
+  return v < 10 ? '0' + v : v;
+}
